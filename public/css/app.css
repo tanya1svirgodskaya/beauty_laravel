@@ -1,0 +1,29 @@
+table {
+ border: 4px double #333; /* Рамка вокруг таблицы */
+ border-collapse: separate; /* Способ отображения границы */
+ width: 80%; /* Ширина таблицы */
+ border-spacing: 7px 11px; /* Расстояние между ячейками */
+ margin: 20 px 50 px;
+}
+td {
+ padding: 5px; /* Поля вокруг текста */
+ border: 1px solid #a52a2a; /* Граница вокруг ячеек */
+}
+.reference {
+display: none;
+}
+.reference ~ .story {
+display: none;
+}
+.reference + label {
+font-size: 16px;
+padding: 0;
+color: green;
+cursor: pointer;
+display: inline-block;
+}
+.reference:checked ~ .story {
+display: block;
+
+padding: 10px;
+}
