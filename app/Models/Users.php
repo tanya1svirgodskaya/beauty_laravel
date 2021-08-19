@@ -8,12 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Users extends Model
 {
     use HasFactory;
-    public static function newuser ($req){
+    public static function newuser ( $req){
       $user= new Users();
-      $user->name=$req->input('name');
-      $user->lastname=$req ->input ('lastname');
+      $user->name=$req->name;
+      $user->lastname=$req ->lastname;
       $user->save();
-      
+
     }
 
 }
